@@ -47,13 +47,23 @@
 ### 立即部署
 
 **5 分钟完成部署，零成本永久使用：**
-
+一：
 1. **Fork 项目** → 点击右上角 Fork 按钮
 2. **新建 wrangler.jsonc 文件** 从 wrangler.template.jsonc 复制然后修改
 3. **一键部署** → [![Deploy](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/你的用户名/Cloudflare-Navihive)
 4. **配置数据库** → 按照[部署指南](https://zqq-nuli.github.io/Cloudflare-Navihive/deployment/)创建 D1 数据库
 
 > 详细步骤见[完整部署指南](https://zqq-nuli.github.io/Cloudflare-Navihive/deployment/)
+
+二：
+1、上面“一键部署”做完后，点击“README”里的小黄云，进CF
+2、<img width="396" height="295" alt="自建网站导航1" src="https://github.com/user-attachments/assets/8f6acf85-aa56-4099-971f-d2cd9d634317" />
+<img width="373" height="497" alt="自建网站导航2" src="https://github.com/user-attachments/assets/5bb765dd-5775-4f08-b5f6-942e5cefc301" />
+
+主要的链接地址：
+https://github.com/zqq-nuli/Cloudflare-Navihive
+https://bcrypt-generator.com/  哈希值粘贴到   AUTH_PASSWORD
+https://bcrypt.online/    32位随机字符串   AUTH_SECRET
 
 
 -- 创建分组表
