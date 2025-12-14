@@ -57,8 +57,17 @@
 
 二：
 1、上面“一键部署”做完后，点击“README”里的小黄云，进CF
-2、<img width="396" height="295" alt="自建网站导航1" src="https://github.com/user-attachments/assets/8f6acf85-aa56-4099-971f-d2cd9d634317" />
+-- 2、<img width="396" height="295" alt="自建网站导航1" src="https://github.com/user-attachments/assets/8f6acf85-aa56-4099-971f-d2cd9d634317" />
 <img width="373" height="497" alt="自建网站导航2" src="https://github.com/user-attachments/assets/5bb765dd-5775-4f08-b5f6-942e5cefc301" />
+<img width="403" height="430" alt="自建网站导航3" src="https://github.com/user-attachments/assets/a723722d-e0d0-4373-abe9-156ac00da829" />
+<img width="584" height="443" alt="自建网站导航4" src="https://github.com/user-attachments/assets/3d77c5c9-9b3f-4e1b-8c5f-bf3fc0027204" />
+<img width="810" height="410" alt="自建网站导航5" src="https://github.com/user-attachments/assets/8cb19579-aca5-4846-bb80-81b6dbfb1043" />
+<img width="627" height="468" alt="自建网站导航6" src="https://github.com/user-attachments/assets/c9deb617-fc49-4a0a-b7d4-762574b3ae68" />
+<img width="452" height="497" alt="自建网站导航7" src="https://github.com/user-attachments/assets/61132f2d-9c07-44fe-b01a-b63dc2fa2fd8" />
+<img width="591" height="419" alt="自建网站导航8" src="https://github.com/user-attachments/assets/26348c1d-d936-4cf1-8d6e-1df1e9f634be" />
+<img width="466" height="503" alt="自建网站导航9" src="https://github.com/user-attachments/assets/b21cf55a-d1ec-4759-9fd9-7e0cec8ee386" />
+<img width="806" height="506" alt="自建网站导航10" src="https://github.com/user-attachments/assets/aa1f52e2-e13a-4d34-9842-8c42d1ef8d38" />
+<img width="660" height="433" alt="自建网站导航11" src="https://github.com/user-attachments/assets/e5c61455-9516-4c4c-8382-e26939babf48" />
 
 主要的链接地址：
 https://github.com/zqq-nuli/Cloudflare-Navihive
@@ -66,7 +75,7 @@ https://bcrypt-generator.com/  哈希值粘贴到   AUTH_PASSWORD
 https://bcrypt.online/    32位随机字符串   AUTH_SECRET
 
 
--- 创建分组表
+-- 1创建分组表
 
 CREATE TABLE IF NOT EXISTS groups (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -77,7 +86,7 @@ CREATE TABLE IF NOT EXISTS groups (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- 创建站点表
+-- 2创建站点表
 
 CREATE TABLE IF NOT EXISTS sites (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -94,7 +103,7 @@ CREATE TABLE IF NOT EXISTS sites (
     FOREIGN KEY (group_id) REFERENCES groups(id) ON DELETE CASCADE
 );
 
--- 创建配置表
+-- 3创建配置表
 
 CREATE TABLE IF NOT EXISTS configs (
     key TEXT PRIMARY KEY,
@@ -103,11 +112,11 @@ CREATE TABLE IF NOT EXISTS configs (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- 标记数据库已初始化
+-- 4标记数据库已初始化
 
 INSERT INTO configs (key, value) VALUES ('DB_INITIALIZED', 'true');
 
--- 创建只读模式所需索引
+-- 5创建只读模式所需索引
 
 CREATE INDEX IF NOT EXISTS idx_groups_is_public ON groups(is_public);
 CREATE INDEX IF NOT EXISTS idx_sites_is_public ON sites(is_public);
