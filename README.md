@@ -56,7 +56,7 @@
 > 详细步骤见[完整部署指南](https://zqq-nuli.github.io/Cloudflare-Navihive/deployment/)
 
 二：
-1、上面“一键部署”做完后，点击“README”里的小黄云，进CF
+-- 1、上面“一键部署”做完后，点击“README”里的小黄云，进CF
 -- 2、<img width="396" height="295" alt="自建网站导航1" src="https://github.com/user-attachments/assets/8f6acf85-aa56-4099-971f-d2cd9d634317" />
 <img width="373" height="497" alt="自建网站导航2" src="https://github.com/user-attachments/assets/5bb765dd-5775-4f08-b5f6-942e5cefc301" />
 <img width="403" height="430" alt="自建网站导航3" src="https://github.com/user-attachments/assets/a723722d-e0d0-4373-abe9-156ac00da829" />
@@ -69,11 +69,10 @@
 <img width="806" height="506" alt="自建网站导航10" src="https://github.com/user-attachments/assets/aa1f52e2-e13a-4d34-9842-8c42d1ef8d38" />
 <img width="660" height="433" alt="自建网站导航11" src="https://github.com/user-attachments/assets/e5c61455-9516-4c4c-8382-e26939babf48" />
 
-主要的链接地址：
-https://github.com/zqq-nuli/Cloudflare-Navihive
-https://bcrypt-generator.com/  哈希值粘贴到   AUTH_PASSWORD
-https://bcrypt.online/    32位随机字符串   AUTH_SECRET
-
+-- 主要的链接地址：
+-- https://github.com/zqq-nuli/Cloudflare-Navihive
+-- https://bcrypt-generator.com/  哈希值粘贴到   AUTH_PASSWORD
+-- https://bcrypt.online/    32位随机字符串   AUTH_SECRET
 
 -- 1创建分组表
 
